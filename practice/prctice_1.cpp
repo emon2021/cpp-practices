@@ -6,20 +6,17 @@ int main()
 {
     //  pattern printing
     int row, col, n;
-    n = 5;
-
+    n = 3;
+    char ch = 'A';
     for(row = 1; row <= n; row++)
     {
-        int space = n - row;
-        for(col = 1; col <= space; col++)
+        for(col = 1; col <= n; col++)
         {
-            cout << " ";
-        }
-        
-        for(col = 1; col <= row; col++)
-        {
-            cout << "*";
+            char temp = ch + row + col - 2;
+            cout << temp  << " ";
+            // ch++;
         }
         cout << endl;
+
     }
 }

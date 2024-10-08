@@ -10,11 +10,20 @@ int main()
     char ch = 'A';
     for(row = 1; row <= n; row++)
     {
-        for(col = 1; col <= n; col++)
+        int space = n - row;
+        for(col = 1; col <= space; col++)
         {
-            char temp = ch + row + col - 2;
-            cout << temp  << " ";
-            // ch++;
+            cout << "  ";
+        }
+
+        for(col = 1; col <= row; col++)
+        {
+            cout << col << " ";
+        }
+
+        for(col = row-1; col >= 1; col--)
+        {
+            cout << col << " ";
         }
         cout << endl;
 

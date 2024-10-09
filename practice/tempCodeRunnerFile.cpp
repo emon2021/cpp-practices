@@ -1,4 +1,4 @@
-for(int col = 1; col <= row; col++)
-        // {
-        //     cout << "*";
-        // }
+for(int col = n; col >= row; col--)
+        {
+            cout << "*";
+        }

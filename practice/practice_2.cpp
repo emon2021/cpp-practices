@@ -9,18 +9,20 @@ int main()
 
     for(int row = 1; row <= n; row++)
     {
-        int space = 1;
-
-        for(space; space < row; space++)
+        
+        for(int col = 1; col <= row; col++)
         {
-            cout << " " ;
+            cout << "* " ;
         }
+        cout << endl;
+    }
 
-        for(int col = n; col >= row; col--)
+    for(int row = n-1; row > 0; row--)
+    {
+        for(int col = row; col > 0; col--)
         {
-            cout << "* "; // just use space after the stars symbol then it will create a triangle pyramid
+            cout << "* ";
         }
-
         cout << endl;
     }
 }
